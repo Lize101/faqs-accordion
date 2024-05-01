@@ -55,6 +55,8 @@ body {
     font-size: 1.2em;
 }
 
+/* Media queries - Responsive */
+
 @media (max-width: 770px) {
     .question {
         font-size: 1em;
@@ -66,7 +68,6 @@ body {
 }
 
 @media (max-width: 570px) {
-
     .h2 {
         font-size: 20px;
     }
