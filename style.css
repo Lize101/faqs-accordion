@@ -40,9 +40,17 @@ body {
 .answer {
     padding: 20px 0;
     line-height: 1.5;
-    /* width: 100%; */
-    height: 0px;
-    /* overflow: hidden; */
     display: none;
     transition: 0.5s;
+}
+
+/* JAVASCRIPT STYLING */
+
+.accordion-container.active .answer {
+    display: block; /*answer is displayed when accordion item is clicked (active)*/
+}
+
+.accordion-container.active .question::after {
+    content: '-'; /*dash appears when accordion item is clicked (active)*/
+    font-size: 1.2em;
 }
