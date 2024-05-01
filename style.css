@@ -18,7 +18,7 @@ body {
 /* Accordions */
 
 .accordions {
-    width: 50%;
+    width: 55%;
     background-color: #fff;
     padding: 30px;
     border-radius: 5px;
@@ -53,4 +53,50 @@ body {
 .accordion-container.active .question::after {
     content: '-'; /*dash appears when accordion item is clicked (active)*/
     font-size: 1.2em;
+}
+
+@media (max-width: 770px) {
+    .question {
+        font-size: 1em;
+    }
+
+    .answer {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 570px) {
+
+    .h2 {
+        font-size: 20px;
+    }
+
+    .question {
+        font-size: 0.9em;
+    }
+
+    .answer {
+        font-size: 0.8em;
+    }
+
+    .accordions {
+        width: 65%;
+    }
+}
+
+@media (max-width: 560px) {
+    body {
+        background: none;
+    }
+
+    .accordions {
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    .question::after {
+        right: -5px;
+    }
+
 }
